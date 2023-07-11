@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOnlineMeals</title>
+    <link rel="stylesheet" media="screen and (max-width: 1050px)" href="css/phone.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #navbar{
+            position: fixed;
+            top: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        #logo img{
+            width: 43px;
+            
+        }
+        #logo{
+            margin: 10px 10px;
+        }
+        #navbar ul{
+            display: flex;
+
+        }
+        #navbar ul li{
+            display: flex;
+            list-style: none;
+            font-size: 1.2rem;
+        }
+        #navbar ul li a{
+            color: white;
+            display: block;
+            padding: 3px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        #navbar::before{
+            background-color: black;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #navbar ul li a:hover{
+            background-color: white;
+            color: black;
+        
+        }
+        #home{
+            display:flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 400px;
+            align-items: center;
+            color: beige;
+            justify-content: center;
+           
+        }
+
+        #home::before{
+            
+            content: "";
+            position: absolute;
+            background: url('img/vintage-old-rustic-cutlery-dark.jpg') no-repeat center center/cover;
+            background-position: 0px 0px;
+            
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }.btn{
+            padding: 4px 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        .h-secondary{
+            padding: 12px;
+            font-size: 1.8rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 10px;
+            text-align: center;
+        }
+        .h-primary{
+            text-align: center;
+            color: azure;
+            font-size: 3.8rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #home p{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        #services{
+            margin: 107px 18px;
+            display: flex;
+            
+            text-align: center;
+        }
+        #services.box{
+            margin: 10px;
+            border: 2px solid brown;
+            padding: 34px;
+            border-radius: 23px;
+            background-color: gray;
+        }
+        #services.box img{
+            width: 78px;
+        }
+        #ourservices{
+            position: relative;
+            color: black;
+            top: 95px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        #clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 0px;
+        }
+        .client-items{
+            padding: 34px;
+            justify-content: center;
+            text-align: center;
+
+        }
+    .client-items img{
+        height: 70px;
+        margin: 5px;
+        justify-content: center;
+    }
+    #client-section::before{
+        content: "";
+        position: absolute;
+        background: url(img/top-view-table-full-delicious-food-composition.jpg);
+        height: 52%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    #contact{
+        color: white;
+        position: relative;
+        margin: 0px 0px;
+    } 
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url(img/pexels-chepté-cormani-1416530.jpg);
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 9px 20px;
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box label{
+        font-size: 1.3rem;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    #contact-box form{
+        width: 40%;
+    }
+    .form-group{
+        margin: 9px;
+    }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/christmas_2012_new_2857.jpg" alt="MyOnlineMeals.com" >
+                
+        </div>
+        <div>
+            <ul>
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">Services</a></li>
+                <li class="item"><a href="">Contact us</a></li>
+                <li class="item"><a href="">About us</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class ="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam
+            deserunt temporibus ipsa reiciendis, quae debitis commodi tempora
+            fugit iste, doloremque veritatis maiores ad eligendi repellendus! Doloremque
+            incidunt deserunt, quibusdam nihil consequuntur facere libero?
+        </p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center" id="ourservices">Our Services</h1>
+        <div id="services">
+            <div class="box" style="border: 2px solid brown; background-color: rgba(241, 235, 235, 0.841); border-radius: 23px;
+            margin: 5px; padding: 14px 14px;";>
+                <img src="img/pizza-geb8218a03_1280.jpg" alt="" width="201px" >
+                <h2 class="h-secondary">Food ordering </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi non molestias, inventore, mollitia quidem cupiditate
+                    sed quo porro dolor pariatur repellat quos obcaecati fugiat.
+                    Nostrum deserunt ex laboriosam itaque accusamus aliquam.</p>
+            </div>
+            <div class="box" style="border: 2px solid brown;background-color: rgba(241, 235, 235, 0.841); border-radius: 23px;
+            margin: 5px; padding: 14px 14px;";>
+                <img src="img/pexels-ella-olsson-1640768.jpg" alt="" width="180px">
+                <h2 class="h-secondary">Bulk ordering </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi non molestias, inventore, mollitia quidem cupiditate
+                    sed quo porro dolor pariatur repellat quos obcaecati fugiat.
+                    Nostrum deserunt ex laboriosam itaque accusamus aliquam.</p>
+            </div>
+            <div class="box"style="border:2px solid brown ;background-color: rgba(241, 235, 235, 0.841); border-radius: 23px;
+            margin: 5px; padding: 4px 14px;";>
+                <img src="img/3697355.jpg" alt="" width="134px" >
+                <h2 class="h-secondary">Delivery </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi non molestias, inventore, mollitia quidem cupiditate
+                    sed quo porro dolor pariatur repellat quos obcaecati fugiat.
+                    Nostrum deserunt ex laboriosam itaque accusamus aliquam.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section" style="margin: -48px 0px;" >
+        <h1 style="text-align: center;font-family:'Times New Roman', Times, serif;font-size:  3.0rem;padding: 15px;">Our Clients</h1>
+        <div id="clients">
+            <div class="client-items">
+                <img src="img/Apple_logo_PNG6.png" alt="" >
+                <h3 class="h-secondary">Apple</h2>
+            </div>
+            <div class="client-items">
+                <img src="img/busan-metro-logo.png" alt="">
+                <h3 class="h-secondary">Metro</h2>
+            </div>
+            <div class="client-items">
+                <img src="img/microsoft.png" alt="">
+                <h3 class="h-secondary">Microsoft</h2>
+            </div>
+            <div class="client-items">
+                <img src="img/KO.png" alt="" >
+                <h3 class="h-secondary">Coca-Cola</h2>
+            </div>
+            
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1 style="text-align: center; padding: 15px; font-size: 3.0rem;">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:  </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class ='form-group'>
+                    <label for="name">Email</label>
+                    <input type="text" name="name" id ="name" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:  </label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your Phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:  </label>
+                    <textarea name="message" id="message" cols="10" rows="5" ></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div style="text-align: center;">
+            Copyright &copy; www.myOnlineMean.com. All rights reserved!
+
+        </div>
+    </footer>
+</body>
+</html>

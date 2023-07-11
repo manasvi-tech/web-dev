@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Webpage Sample</title>
+    <style>
+        #Name{background-color: bisque;
+              border: 3px solid #219;}
+    </style>
+</head>
+<body>
+    <h2>This is form tutorial</h2>
+    <form action="backend.php">
+        <div id ="Name">Name: <input type="text" name = "Myname"></div><br>
+        <div>Role: <input type="text" name ="Myrole"></div><br>
+        <div>Email: <input type="email" name = "email"></div><br>
+        <div>Date: <input type="date" name = "mydate"></div><br>
+        <div>Are you eligible: <input type="checkbox" name ="Myeligibility"></div><br>
+        <div>Gender: Male <input type="radio" name ="Mygender"> Female <input type="radio" name ="Mygender">Others <input type="radio" name ="Mygender"></div><br>
+        <div>Write about yourself: <br><textarea name="myText" id="" cols="30" rows="10"></textarea></div><br>
+        <div><label for="profession">Profession</label>
+            <select name="myProfession" id="proffesion">
+                <option value="stu"selected>Student</option>
+                <option value="wrk">Working</option>
+            </select>
+        </div><br>
+        <div><input type="submit" value = "Submit now">
+            <input type="reset" value = "Reset Now">
+        </div>
+    </form>
+    
+
+</body>
+</html>
